@@ -4947,13 +4947,13 @@
                 time1 = d.getTime() / 1000;
                 if (insBonus == 0) {
                     this.credW.bonus1.visible = true;
-                    this.credW.bonus1.text = "click for 15 mins bonus time";
+                    this.credW.bonus1.text = "点击获得15分钟的奖励时间";
                 } else {
                     this.credW.bonus1.visible = false;
                 }
                 if (credBonus == 0) {
                     this.bonus11.visible = true;
-                    this.bonus11.text = "click credits +5 mins bonus time";
+                    this.bonus11.text = "点击 鸣谢 获得5分钟的奖励时间";
                 } else {
                     this.bonus11.visible = false;
                 }
@@ -4973,7 +4973,7 @@
                 fps = 30;
                 fps2 = 30;
                 this.helpSplash.alpha = 1;
-                this.helpSplash.text = "Here was an error with an ad but anyway here is 1.5 mins of bonus time for you ;)";
+                this.helpSplash.text = "这是一个广告错误，但无论如何，这是给您的1.5分钟的奖励时间 ;)";
                 speedUPtime += 90;
                 respawn = 600;
             }
@@ -4982,7 +4982,7 @@
                 fps = 30;
                 fps2 = 30;
                 this.helpSplash.alpha = 1;
-                this.helpSplash.text = "Thanks very much for watching. Here is your bonus 10 mins!";
+                this.helpSplash.text = "非常感谢您的收看。 这是您10分钟的奖励时间！";
                 speedUPtime += 600;
                 respawn = 600;
             }
@@ -5886,13 +5886,13 @@
             this.addEventListener("tick", infinitySet.bind(this));
 
             function infinitySet() {
-                this.iWindowt.infReacht.text = "You reached INFINITY " + format(infs, 0) + " times";
+                this.iWindowt.infReacht.text = "你达到了无限 " + format(infs, 0) + " 次";
                 infProd = infs.div(100);
                 if (infProd.gte(1)) {
                     infProd = infProd.log(10).plus(1);
                 }
-                this.iWindowt.infBonus.text = "[Your prod. exp. bonus is +  ^" + format(infProd, 2) + "]";
-                this.iWindowt.iPoints.text = "You have " + format(IP, 0) + " Infinity Points";
+                this.iWindowt.infBonus.text = "[你的产出。 经验 奖金是 +  ^" + format(infProd, 2) + "]";
+                this.iWindowt.iPoints.text = "你有 " + format(IP, 0) + " 无限点";
                 this.iWindowt.iu1.b_color.gotoAndStop(0);
                 this.iWindowt.iu1.u_name.text = "U1";
                 this.iWindowt.iu1.lock.visible = false;
@@ -6213,8 +6213,8 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu1.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu1.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 1 - Fast Start";
-                    this.iWindowt.iuHov.iu_lev.text = "Level: " + format(IUpgrades[0].amount, 0) + " / " + format(IUpgrades[0].max_am, 0);
+                    this.iWindowt.iuHov.iu_name.text = "IU 1 - 快速开始";
+                    this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[0].amount, 0) + " / " + format(IUpgrades[0].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[0].cost, 0) + " IP";
                     if (IUpgrades[0].amount.gte(IUpgrades[0].max_am)) {
                         this.iWindowt.iuHov.buyIP.visible = false;
@@ -6222,7 +6222,7 @@
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
                     var effNext = nd(1).plus((IUpgrades[0].amount).plus(1));
-                    this.iWindowt.iuHov.iu_desc.text = "Bonus multiplier to gains: x" +
+                    this.iWindowt.iuHov.iu_desc.text = "获得奖励倍数": x" +
                         format(IUpgrades[0].effect, 0) + " -> x" + format(effNext, 0);
                 } else if (infHover == 2) {
                     this.iWindowt.iuHov.visible = true;
@@ -6250,13 +6250,13 @@
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
                     var effNext = IUpgrades[2].amount.plus(1);
-                    this.iWindowt.iuHov.iu_desc.text = "Autoflush to all cells additional " +
+                    this.iWindowt.iuHov.iu_desc.text = "自动冲洗额外的所有单元格 " +
                         format(IUpgrades[2].effect, 0) + "% -> " + format(effNext, 0) + "%";
                 } else if (infHover == 4) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu4.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu4.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 4 - Better IP";
+                    this.iWindowt.iuHov.iu_name.text = "IU 4 - 更好IP";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[3].amount, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[3].cost, 0) + " IP";
                     this.iWindowt.iuHov.buyIP.visible = true;
@@ -6369,7 +6369,7 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu13.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu13.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 13 - Better IP 2.0";
+                    this.iWindowt.iuHov.iu_name.text = "IU 13 - 更好的 IP 2.0";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[12].amount, 0) + " / " + format(IUpgrades[12].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[12].cost, 0) + " IP";
                     if (IUpgrades[12].amount.gte(IUpgrades[12].max_am)) {
@@ -7155,7 +7155,7 @@
                         }
                     }
                 } else {
-                    this.progToInf.text = "无限进度": " +
+                    this.progToInf.text = "无限进度: " +
                         format_NOINF(points) + " / " + format_NOINF(thisInf) +
                         " (" + format(points.plus(1).log(10).div(thisInf.log(10)).times(100), 3) +
                         "%)";
