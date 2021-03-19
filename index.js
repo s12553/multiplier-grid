@@ -1841,7 +1841,7 @@
     p.nominalBounds = new cjs.Rectangle(-0.9, -1.4, 33.6, 20.799999999999997);
     (lib.preCell = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
-        this.text = new cjs.Text("声望单元格", "bold 6px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("网格重置", "bold 6px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 9;
         this.text.lineWidth = 41;
@@ -3244,7 +3244,7 @@
     p.nominalBounds = new cjs.Rectangle(-33.5, -34, 70, 70);
     (lib.details_ = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
-        this.text = new cjs.Text("显示更多详细信息(单击单元格进行刷新)", "bold 12px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("显示更多详细信息(单击网格进行刷新)", "bold 12px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 16;
         this.text.lineWidth = 336;
@@ -3904,7 +3904,7 @@
     p.nominalBounds = new cjs.Rectangle(-2, -2, 167, 48);
     (lib.Символ1 = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
-        this.sh = new cjs.Text("达到无限\n点数", "bold 11px 'Arial'", "#FFFFFF");
+        this.sh = new cjs.Text("达到无限需要\n点数", "bold 11px 'Arial'", "#FFFFFF");
         this.sh.name = "sh";
         this.sh.textAlign = "center";
         this.sh.lineHeight = 15;
@@ -4122,7 +4122,7 @@
         this.confGUP.name = "confGUP";
         this.confGUP.setTransform(82.35, 61.7, 1.2478, 1.2478, 0, 0, 0, 30.7, 9.2);
         new cjs.ButtonHelper(this.confGUP, 0, 1, 2);
-        this.tip = new cjs.Text("重置所有单元格和速度", "bold 7px 'Arial'", "#FFFFFF");
+        this.tip = new cjs.Text("重置所有网格和速度", "bold 7px 'Arial'", "#FFFFFF");
         this.tip.name = "tip";
         this.tip.textAlign = "center";
         this.tip.lineHeight = 10;
@@ -4312,7 +4312,7 @@
         this.preSend.lineWidth = 101;
         this.preSend.parent = this;
         this.preSend.setTransform(102.55, 238.35, 1.893, 1.893);
-        this.preAvai = new cjs.Text("声望将在 1,000,000 MF 时可用", "bold 7px 'Arial'", "#FFFFFF");
+        this.preAvai = new cjs.Text("网格重置将在 1,000,000 MF 时可用", "bold 7px 'Arial'", "#FFFFFF");
         this.preAvai.name = "preAvai";
         this.preAvai.textAlign = "center";
         this.preAvai.lineHeight = 10;
@@ -4325,35 +4325,35 @@
         this.crossUp = new lib.crossCell();
         this.crossUp.name = "crossUp";
         this.crossUp.setTransform(88.7, 115.2, 0.9609, 0.9609, 8.1867, 0, 0, 27.4, 25.9);
-        this.preExp = new cjs.Text("声望加成: ^1.00", "bold 8px 'Arial'", "#FFFFFF");
+        this.preExp = new cjs.Text("网格重置加成: ^1.00", "bold 8px 'Arial'", "#FFFFFF");
         this.preExp.name = "preExp";
         this.preExp.textAlign = "center";
         this.preExp.lineHeight = 11;
         this.preExp.lineWidth = 113;
         this.preExp.parent = this;
         this.preExp.setTransform(226.85, 171.45, 1.893, 1.893);
-        this.sendst = new cjs.Text("该网格会发送0％的MF\n左边和上边单元格每个TICK", "bold 6px 'Arial'", "#FFFFFF");
+        this.sendst = new cjs.Text("该网格会发送0％的MF\n左边和上边网格每次时间刻度", "bold 6px 'Arial'", "#FFFFFF");
         this.sendst.name = "sendst";
         this.sendst.textAlign = "center";
         this.sendst.lineHeight = 9;
         this.sendst.lineWidth = 110;
         this.sendst.parent = this;
         this.sendst.setTransform(230.25, 132.2, 1.893, 1.893);
-        this.clickI = new cjs.Text("再次单击此单元格\n以灌注点数!", "bold 6px 'Arial'", "#FFFFFF");
+        this.clickI = new cjs.Text("再次单击此网格\n以灌注点数!", "bold 6px 'Arial'", "#FFFFFF");
         this.clickI.name = "clickI";
         this.clickI.textAlign = "center";
         this.clickI.lineHeight = 9;
         this.clickI.lineWidth = 69;
         this.clickI.parent = this;
         this.clickI.setTransform(234.05, 76.8, 2.8626, 2.8626);
-        this.tipText = new cjs.Text("基于您的单元格坐标", "bold 6px 'Arial'", "#FFFFFF");
+        this.tipText = new cjs.Text("基于您的网格坐标", "bold 6px 'Arial'", "#FFFFFF");
         this.tipText.name = "tipText";
         this.tipText.textAlign = "center";
         this.tipText.lineHeight = 9;
         this.tipText.lineWidth = 175;
         this.tipText.parent = this;
         this.tipText.setTransform(169.7, 53.75, 1.893, 1.893);
-        this.cdText = new cjs.Text("单元格递减 [CD]: 100", "bold 8px 'Arial'", "#FFFFFF");
+        this.cdText = new cjs.Text("网格削弱 [CD]: 100", "bold 8px 'Arial'", "#FFFFFF");
         this.cdText.name = "cdText";
         this.cdText.textAlign = "center";
         this.cdText.lineHeight = 11;
@@ -4413,7 +4413,7 @@
         this.lmText.lineWidth = 175;
         this.lmText.parent = this;
         this.lmText.setTransform(171.05, 146.15, 1.893, 1.893);
-        this.nlText = new cjs.Text("下一级是: 10,000,000 MF", "bold 8px 'Arial'", "#FFFFFF");
+        this.nlText = new cjs.Text("下一级: 10,000,000 MF", "bold 8px 'Arial'", "#FFFFFF");
         this.nlText.name = "nlText";
         this.nlText.textAlign = "center";
         this.nlText.lineHeight = 11;
@@ -4448,7 +4448,7 @@
         this.levText.lineWidth = 119;
         this.levText.parent = this;
         this.levText.setTransform(222.25, 5.3, 1.893, 1.893);
-        this.cellPos = new cjs.Text("单元格: 9x9", "bold 10px 'Arial'", "#FFFFFF");
+        this.cellPos = new cjs.Text("网格: 9x9", "bold 10px 'Arial'", "#FFFFFF");
         this.cellPos.name = "cellPos";
         this.cellPos.textAlign = "center";
         this.cellPos.lineHeight = 13;
@@ -4789,20 +4789,20 @@
         this.iu1 = new lib.i_up();
         this.iu1.name = "iu1";
         this.iu1.setTransform(96.95, 312.4, 0.8765, 0.8765, 0, 0, 0, 29.6, 28.7);
-        this.iPoints = new cjs.Text("您有2个无限点", "bold 20px 'Arial'", "#FFFFFF");
+        this.iPoints = new cjs.Text("你有2个无限点", "bold 20px 'Arial'", "#FFFFFF");
         this.iPoints.name = "iPoints";
         this.iPoints.textAlign = "center";
         this.iPoints.lineHeight = 24;
         this.iPoints.lineWidth = 468;
         this.iPoints.parent = this;
         this.iPoints.setTransform(326.2, 190.5, 1.0437, 1.0437);
-        this.infBonus = new cjs.Text("[您的生产量达到 ^1.00]", "bold 20px 'Arial'", "#FFFFFF");
+        this.infBonus = new cjs.Text("[你的生产量提高 ^1.00]", "bold 20px 'Arial'", "#FFFFFF");
         this.infBonus.name = "infBonus";
         this.infBonus.lineHeight = 24;
         this.infBonus.lineWidth = 468;
         this.infBonus.parent = this;
         this.infBonus.setTransform(81.5, 125.35, 1.0437, 1.0437);
-        this.infReacht = new cjs.Text("您达到了无限 1 次", "bold 20px 'Arial'", "#FFFFFF");
+        this.infReacht = new cjs.Text("你进行了 1 次无限", "bold 20px 'Arial'", "#FFFFFF");
         this.infReacht.name = "infReacht";
         this.infReacht.lineHeight = 24;
         this.infReacht.lineWidth = 406;
@@ -6236,7 +6236,7 @@
                     } else {
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
-                    this.iWindowt.iuHov.iu_desc.text = "刚刚突破无限";
+                    this.iWindowt.iuHov.iu_desc.text = "就只是突破无限";
                 } else if (infHover == 3) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu3.x;
@@ -6250,13 +6250,13 @@
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
                     var effNext = IUpgrades[2].amount.plus(1);
-                    this.iWindowt.iuHov.iu_desc.text = "自动额外灌注所有单元格 " +
+                    this.iWindowt.iuHov.iu_desc.text = "自动额外灌注所有网格 " +
                         format(IUpgrades[2].effect, 0) + "% -> " + format(effNext, 0) + "%";
                 } else if (infHover == 4) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu4.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu4.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 4 - 更好IP";
+                    this.iWindowt.iuHov.iu_name.text = "IU 4 - 更好无限点";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[3].amount, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[3].cost, 0) + " IP";
                     this.iWindowt.iuHov.buyIP.visible = true;
@@ -6274,7 +6274,7 @@
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
                     var effNext = nd(0.99).pow(IUpgrades[4].amount.plus(1));
-                    this.iWindowt.iuHov.iu_desc.text = "减量基数: " +
+                    this.iWindowt.iuHov.iu_desc.text = "网格衰减: " +
                         format(IUpgrades[4].effect.times(10), 2) + " -> " + format(effNext.times(10), 2);
                 } else if (infHover == 6) {
                     this.iWindowt.iuHov.visible = true;
@@ -6288,7 +6288,7 @@
                     } else {
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
-                    this.iWindowt.iuHov.iu_desc.text = "网格声望重置不会重置任何东西";
+                    this.iWindowt.iuHov.iu_desc.text = "网格重置不会重置任何东西";
                 } else if (infHover == 7) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu7.x;
@@ -6301,7 +6301,7 @@
                     } else {
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
-                    this.iWindowt.iuHov.iu_desc.text = "基本速度等级";
+                    this.iWindowt.iuHov.iu_desc.text = "基础速度等级";
                 } else if (infHover == 8) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu8.x;
@@ -6319,7 +6319,7 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu9.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu9.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 9 - 自动升级";
+                    this.iWindowt.iuHov.iu_name.text = "IU 9 - 自动升阶";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[8].amount, 0) + " / " + format(IUpgrades[8].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[8].cost, 0) + " IP";
                     if (IUpgrades[8].amount.gte(IUpgrades[8].max_am)) {
@@ -6332,7 +6332,7 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu10.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu10.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 10 - Full Automate";
+                    this.iWindowt.iuHov.iu_name.text = "IU 10 - 全自动";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[9].amount, 0) + " / " + format(IUpgrades[9].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[9].cost, 0) + " IP";
                     if (IUpgrades[9].amount.gte(IUpgrades[9].max_am)) {
@@ -6345,7 +6345,7 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu11.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu11.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 11 - Autodegradation";
+                    this.iWindowt.iuHov.iu_name.text = "IU 11 - 完全自动化";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[10].amount, 0) + " / " + format(IUpgrades[10].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[10].cost, 0) + " IP";
                     if (IUpgrades[10].amount.gte(IUpgrades[10].max_am)) {
@@ -6369,7 +6369,7 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu13.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu13.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 13 - 更好的 IP 2.0";
+                    this.iWindowt.iuHov.iu_name.text = "IU 13 - 更好的无限点 2.0";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[12].amount, 0) + " / " + format(IUpgrades[12].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[12].cost, 0) + " IP";
                     if (IUpgrades[12].amount.gte(IUpgrades[12].max_am)) {
@@ -6377,12 +6377,12 @@
                     } else {
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
-                    this.iWindowt.iuHov.iu_desc.text = "IU 4 is better based on how many times you infinited";
+                    this.iWindowt.iuHov.iu_desc.text = "基于你的无限次数使 IU 4 的效果更好";
                 } else if (infHover == 14) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu14.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu14.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 14 - More Ascensions";
+                    this.iWindowt.iuHov.iu_name.text = "IU 14 - 更多时间重置";
                     this.iWindowt.iuHov.iu_lev.text = "Level: " + format(IUpgrades[13].amount, 0) + " / " + format(IUpgrades[13].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[13].cost, 0) + " IP";
                     if (IUpgrades[13].amount.gte(IUpgrades[13].max_am)) {
@@ -6391,7 +6391,7 @@
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
                     var effNext = IUpgrades[13].amount.plus(2);
-                    this.iWindowt.iuHov.iu_desc.text = "Ascend more times: " +
+                    this.iWindowt.iuHov.iu_desc.text = "时间重置次数: " +
                         format(IUpgrades[13].effect, 0) + " -> " + format(effNext, 0);
                 }
             }
@@ -6732,18 +6732,18 @@
             function main() {
                 this.PointsNow.text = "点数: " + format(points.floor(), 0);
                 if (t_max.gte(10)) {
-                    this.ticSpeed.text = "Tick速度: " + format(t_max, 0) + " ms" + " [x" + format(t_mult, 0) + "]";
+                    this.ticSpeed.text = "时间刻度: " + format(t_max, 0) + " ms" + " [x" + format(t_mult, 0) + "]";
                 } else if (t_max.gte(1)) {
-                    this.ticSpeed.text = "Tick速度: " + format(t_max, 1) + " ms" + " [x" + format(t_mult, 0) + "]";
+                    this.ticSpeed.text = "时间刻度: " + format(t_max, 1) + " ms" + " [x" + format(t_mult, 0) + "]";
                 } else {
-                    this.ticSpeed.text = "Tick速度: 1 / " + format(nd(1).div(t_max), 1) + " ms" + " [x" + format(t_mult, 0) + "]";
+                    this.ticSpeed.text = "时间刻度: 1 / " + format(nd(1).div(t_max), 1) + " ms" + " [x" + format(t_mult, 0) + "]";
                 }
                 this.fc1.pcNum.text = "1%";
                 this.fc2.pcNum.text = "10%";
                 this.fc3.pcNum.text = "25%";
                 this.fc4.pcNum.text = "50%";
                 this.fc5.pcNum.text = "100%";
-                this.fc6.pcNum.text = "下个";
+                this.fc6.pcNum.text = "下一级";
                 if (clicksFlush == 2) {
                     this.cTflush_text.text = "双击灌注";
                 } else if (clicksFlush == 1) {
@@ -6999,7 +6999,7 @@
                 }
                 totalMulti = totalMulti.pow(degr_pow.plus(infProd));
                 this.totalMult.text = "总倍数: x" + format(totalMulti, 2);
-                this.cellh1.cellPos.text = "单元格: " + choseY + "x" + choseX;
+                this.cellh1.cellPos.text = "网格: " + choseY + "x" + choseX;
                 this.cellh1.levText.text = "等级 " + format(cells[choseY][choseX].level, 0);
                 this.cellh1.mulText.text = "倍数 " + format_short(cells[choseY][choseX].mult, 2) + " -> " + format_short(cells[choseY][choseX].Nmult, 2);
                 this.cellh1.totText.text = "累计灌注 [TF]: " + format(cells[choseY][choseX].totFlush, 2) + " 点数";
@@ -7007,37 +7007,37 @@
                 this.cellh1.nlText.text = "下一级将于: " + format(cells[choseY][choseX].nextLat, 0) + " MF";
                 this.cellh1.lmText.text = "等级倍数 " + format(cells[choseY][choseX].lMult, 2);
                 this.cellh2.Formulat.text = "倍数 = 1 + [log4(1 + TF/CD)^PE]/10*LM";
-                this.cellh2.cdText.text = "单元格递减 [CD]: " + format(cells[choseY][choseX].fDecr, 0);
+                this.cellh2.cdText.text = "网格削弱 [CD]: " + format(cells[choseY][choseX].fDecr, 0);
                 if (choseY == 0 && choseX == 0) {
                     this.cellh2.sendst.text = "此单元无法将任何TF发送到其他单元";
                     this.cellh2.crossUp.visible = true;
                     this.cellh2.crossLeft.visible = true;
                 } else if (choseY == 0) {
-                    this.cellh2.sendst.text = "这个单元格发送 " + format_short(cells[choseY][choseX].preSend, 1) + "% 的TF到相邻的左单元格每tick";
+                    this.cellh2.sendst.text = "这个网格发送 " + format_short(cells[choseY][choseX].preSend, 1) + "% 的TF到左边的相邻网格每时间刻度";
                     this.cellh2.crossUp.visible = true;
                     this.cellh2.crossLeft.visible = false;
                 } else if (choseX == 0) {
-                    this.cellh2.sendst.text = "这个单元格发送 " + format_short(cells[choseY][choseX].preSend, 1) + "% 的TF到相邻的上单元格每tick";
+                    this.cellh2.sendst.text = "这个网格发送 " + format_short(cells[choseY][choseX].preSend, 1) + "% 的TF到上面的相邻网格每时间刻度";
                     this.cellh2.crossUp.visible = false;
                     this.cellh2.crossLeft.visible = true;
                 } else {
-                    this.cellh2.sendst.text = "这个单元格发送 " + format_short(cells[choseY][choseX].preSend, 1) + "% 的TF到相邻的左单元格每tick";
+                    this.cellh2.sendst.text = "这个网格发送 " + format_short(cells[choseY][choseX].preSend, 1) + "% 的TF到左边的相邻网格每时间刻度";
                     this.cellh2.crossUp.visible = false;
                     this.cellh2.crossLeft.visible = false;
                 }
-                this.cellh2.preExp.text = "声望倍数: ^" + format_short(cells[choseY][choseX].presExp);
+                this.cellh2.preExp.text = "网格重置倍数: ^" + format_short(cells[choseY][choseX].presExp);
                 if (cells[choseY][choseX].flushed.lt(cells[choseY][choseX].flushToP)) {
                     this.cellh2.preSend.visible = false;
                     this.cellh2.preExc.visible = false;
                     this.cellh2.preCell.visible = false;
-                    this.cellh2.preAvai.text = "下一次声望需要 " + format(cells[choseY][choseX].flushToP) + " MF";
+                    this.cellh2.preAvai.text = "下一次网格重置需要 " + format(cells[choseY][choseX].flushToP) + " MF";
                 } else {
                     this.cellh2.preSend.visible = true;
                     this.cellh2.preSend.text = "发送: " + format(cells[choseY][choseX].preSend) + "% -> " + format(cells[choseY][choseX].preSend_next) + "%";
                     this.cellh2.preExc.visible = true;
                     this.cellh2.preExc.text = "P.Exponent: " + format(cells[choseY][choseX].presExp, 2) + " -> " + format(cells[choseY][choseX].presExp_next, 2);
                     this.cellh2.preCell.visible = true;
-                    this.cellh2.preAvai.text = "你可以进行声望重置，它会重置这个单元格";
+                    this.cellh2.preAvai.text = "你可以进行网格重置，它会重置这个网格";
                 }
                 this.tickBar.gotoAndStop(t_now.div(t_max).times(200).floor().toNumber());
                 if (t_now.gte(t_max)) {
@@ -7668,7 +7668,7 @@
         this.maxTickUpg.name = "maxTickUpg";
         this.maxTickUpg.setTransform(625.65, 131.1, 1, 1, 0, 0, 0, 23.1, 13.8);
         new cjs.ButtonHelper(this.maxTickUpg, 0, 1, 2);
-        this.autoprest = new cjs.Text("自动声望?", "bold 12px 'Arial'", "#FFE6E6");
+        this.autoprest = new cjs.Text("自动网格重置?", "bold 12px 'Arial'", "#FFE6E6");
         this.autoprest.name = "autoprest";
         this.autoprest.textAlign = "center";
         this.autoprest.lineHeight = 16;
@@ -7678,7 +7678,7 @@
         this.autoPres = new lib.autoAscSet11();
         this.autoPres.name = "autoPres";
         this.autoPres.setTransform(526.55, 665.6, 1.6792, 1.6792, 0, 0, 0, 8.8, 8.7);
-        this.dAvaible = new cjs.Text("降级将于 100,000 点数 时可用", "bold 12px 'Arial'", "#E6ACAC");
+        this.dAvaible = new cjs.Text("降阶将于 100,000 点数 时可用", "bold 12px 'Arial'", "#E6ACAC");
         this.dAvaible.name = "dAvaible";
         this.dAvaible.textAlign = "center";
         this.dAvaible.lineHeight = 16;
@@ -7732,7 +7732,7 @@
         this.tickUpgrade.name = "tickUpgrade";
         this.tickUpgrade.setTransform(713.05, 131.1, 1, 1, 0, 0, 0, 57.3, 13.8);
         new cjs.ButtonHelper(this.tickUpgrade, 0, 1, 2);
-        this.miniTip = new cjs.Text("提示:总倍数是所有单元格倍数的乘积", "bold 8px 'Arial'", "#CCCCCC");
+        this.miniTip = new cjs.Text("提示:总倍数是所有网格倍数的乘积", "bold 8px 'Arial'", "#CCCCCC");
         this.miniTip.name = "miniTip";
         this.miniTip.textAlign = "center";
         this.miniTip.lineHeight = 11;
@@ -7763,7 +7763,7 @@
         this.tickBar = new lib.tickBar();
         this.tickBar.name = "tickBar";
         this.tickBar.setTransform(840, 102.5, 1, 1, 0, 0, 0, 232.2, 3.8);
-        this.ticSpeed = new cjs.Text("Tick Speed: 2,000 ms [x1]", "bold 10px 'Arial'", "#CCCCCC");
+        this.ticSpeed = new cjs.Text("时间刻度: 2,000 ms [x1]", "bold 10px 'Arial'", "#CCCCCC");
         this.ticSpeed.name = "ticSpeed";
         this.ticSpeed.textAlign = "center";
         this.ticSpeed.lineHeight = 13;
@@ -8076,7 +8076,7 @@
         this.cell0x0 = new lib.cell1();
         this.cell0x0.name = "cell0x0";
         this.cell0x0.setTransform(40.2, 105.05, 0.7722, 0.7722);
-        this.PointsNow = new cjs.Text("Points: 62,777", "bold 13px 'Arial'", "#FFFFFF");
+        this.PointsNow = new cjs.Text("点数: 62,777", "bold 13px 'Arial'", "#FFFFFF");
         this.PointsNow.name = "PointsNow";
         this.PointsNow.textAlign = "center";
         this.PointsNow.lineHeight = 17;
