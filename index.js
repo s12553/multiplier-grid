@@ -701,7 +701,7 @@
     }
     (lib.tickUpgrade = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
-        this.text = new cjs.Text("升阶(G)", "bold 10px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("升阶", "bold 10px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 13;
         this.text.lineWidth = 63;
@@ -4136,7 +4136,7 @@
         this.gridCh.lineWidth = 110;
         this.gridCh.parent = this;
         this.gridCh.setTransform(80.4684, 25.65, 1.393, 1.393);
-        this.text = new cjs.Text("升级?", "bold 7px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("升阶(G)?", "bold 7px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 10;
         this.text.lineWidth = 71;
