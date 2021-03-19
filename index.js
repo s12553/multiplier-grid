@@ -3804,7 +3804,7 @@
     p.nominalBounds = new cjs.Rectangle(-0.6, -0.9, 26.3, 16.4);
     (lib.ascBtn = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
-        this.text = new cjs.Text("转生", "bold 10px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("时间重置(A)", "bold 10px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 13;
         this.text.lineWidth = 43;
