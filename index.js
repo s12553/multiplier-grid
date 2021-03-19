@@ -701,7 +701,7 @@
     }
     (lib.tickUpgrade = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
-        this.text = new cjs.Text("升阶", "bold 10px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("升级", "bold 10px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 13;
         this.text.lineWidth = 63;
