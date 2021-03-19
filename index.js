@@ -7025,7 +7025,7 @@
                     this.cellh2.crossUp.visible = false;
                     this.cellh2.crossLeft.visible = false;
                 }
-                this.cellh2.preExp.text = "网格重置倍数: ^" + format_short(cells[choseY][choseX].presExp);
+                this.cellh2.preExp.text = "网格重置倍数[PE]: ^" + format_short(cells[choseY][choseX].presExp);
                 if (cells[choseY][choseX].flushed.lt(cells[choseY][choseX].flushToP)) {
                     this.cellh2.preSend.visible = false;
                     this.cellh2.preExc.visible = false;
