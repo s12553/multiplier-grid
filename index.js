@@ -701,7 +701,7 @@
     }
     (lib.tickUpgrade = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
-        this.text = new cjs.Text("升级", "bold 10px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("升阶(G)", "bold 10px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 13;
         this.text.lineWidth = 63;
@@ -1877,7 +1877,7 @@
     p.nominalBounds = new cjs.Rectangle(-1.5, -1.5, 118, 36);
     (lib.maxTickUpg = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
-        this.text = new cjs.Text("最大", "bold 10px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("最大(M)", "bold 10px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 13;
         this.text.lineWidth = 25;
@@ -4325,21 +4325,21 @@
         this.crossUp = new lib.crossCell();
         this.crossUp.name = "crossUp";
         this.crossUp.setTransform(88.7, 115.2, 0.9609, 0.9609, 8.1867, 0, 0, 27.4, 25.9);
-        this.preExp = new cjs.Text("声望经验: ^1.00", "bold 8px 'Arial'", "#FFFFFF");
+        this.preExp = new cjs.Text("声望加成: ^1.00", "bold 8px 'Arial'", "#FFFFFF");
         this.preExp.name = "preExp";
         this.preExp.textAlign = "center";
         this.preExp.lineHeight = 11;
         this.preExp.lineWidth = 113;
         this.preExp.parent = this;
         this.preExp.setTransform(226.85, 171.45, 1.893, 1.893);
-        this.sendst = new cjs.Text("该小区向邻居发送0％的MF\n左边和上边单元格每个刻度", "bold 6px 'Arial'", "#FFFFFF");
+        this.sendst = new cjs.Text("该网格会发送0％的MF\n左边和上边单元格每个TICK", "bold 6px 'Arial'", "#FFFFFF");
         this.sendst.name = "sendst";
         this.sendst.textAlign = "center";
         this.sendst.lineHeight = 9;
         this.sendst.lineWidth = 110;
         this.sendst.parent = this;
         this.sendst.setTransform(230.25, 132.2, 1.893, 1.893);
-        this.clickI = new cjs.Text("再次单击此单元格\n去冲洗点数!", "bold 6px 'Arial'", "#FFFFFF");
+        this.clickI = new cjs.Text("再次单击此单元格\n以灌注点数!", "bold 6px 'Arial'", "#FFFFFF");
         this.clickI.name = "clickI";
         this.clickI.textAlign = "center";
         this.clickI.lineHeight = 9;
@@ -4420,14 +4420,14 @@
         this.nlText.lineWidth = 175;
         this.nlText.parent = this;
         this.nlText.setTransform(171.05, 121.25, 1.893, 1.893);
-        this.mfText = new cjs.Text("手动冲洗 [MF]: 1,777,226 点数", "bold 8px 'Arial'", "#FFFFFF");
+        this.mfText = new cjs.Text("手动灌注 [MF]: 1,777,226 点数", "bold 8px 'Arial'", "#FFFFFF");
         this.mfText.name = "mfText";
         this.mfText.textAlign = "center";
         this.mfText.lineHeight = 11;
         this.mfText.lineWidth = 175;
         this.mfText.parent = this;
         this.mfText.setTransform(171.05, 96.35, 1.893, 1.893);
-        this.totText = new cjs.Text("累计冲洗 [TF]: 1,777,226 点数", "bold 9px 'Arial'", "#FFFFFF");
+        this.totText = new cjs.Text("累计灌注 [TF]: 1,777,226 点数", "bold 9px 'Arial'", "#FFFFFF");
         this.totText.name = "totText";
         this.totText.textAlign = "center";
         this.totText.lineHeight = 12;
@@ -5891,7 +5891,7 @@
                 if (infProd.gte(1)) {
                     infProd = infProd.log(10).plus(1);
                 }
-                this.iWindowt.infBonus.text = "[你的产出。 经验 奖金是 +  ^" + format(infProd, 2) + "]";
+                this.iWindowt.infBonus.text = "[基于你的无限次数的加成 +  ^" + format(infProd, 2) + "]";
                 this.iWindowt.iPoints.text = "你有 " + format(IP, 0) + " 无限点";
                 this.iWindowt.iu1.b_color.gotoAndStop(0);
                 this.iWindowt.iu1.u_name.text = "U1";
@@ -6288,7 +6288,7 @@
                     } else {
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
-                    this.iWindowt.iuHov.iu_desc.text = "声望单元格不会重置任何东西";
+                    this.iWindowt.iuHov.iu_desc.text = "网格声望重置不会重置任何东西";
                 } else if (infHover == 7) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu7.x;
@@ -6314,7 +6314,7 @@
                     } else {
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
-                    this.iWindowt.iuHov.iu_desc.text = "允许您自动转生/自动升级速度";
+                    this.iWindowt.iuHov.iu_desc.text = "允许您自动时间重置/自动升级速度";
                 } else if (infHover == 9) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu9.x;
@@ -6327,7 +6327,7 @@
                     } else {
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
-                    this.iWindowt.iuHov.iu_desc.text = "允许你自动升级";
+                    this.iWindowt.iuHov.iu_desc.text = "允许你自动升阶";
                 } else if (infHover == 10) {
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu10.x;
@@ -6789,13 +6789,13 @@
                     } else {
                         this.autoPres.gotoAndStop(0);
                     }
-                    this.miniTip.text = "Tip: total mult is multiplication of all cells to ^" +
+                    this.miniTip.text = "提示: 总倍数等于所有倍数的乘积的 ^" +
                         format(degr_pow.plus(infProd), 2);
                 } else {
                     this.autoPres.visible = false;
                     this.autoprest.visible = false;
                     if (infs.gte(1)) {
-                        this.miniTip.text = "Tip: total mult is multiplication of all cells to ^" +
+                        this.miniTip.text = "提示: 总倍数等于所有倍数的乘积的 ^" +
                             format(degr_pow.plus(infProd), 2);
                     }
                 }
@@ -7069,7 +7069,7 @@
                 if (maxDim < 10) {
                     if (points.lt(gradeUpCostsB[maxDim - 2].pow(degr_powCh))) {
                         this.gAvaible.visible = true;
-                        this.gAvaible.text = "升级可用于 " +
+                        this.gAvaible.text = "升阶可用于 " +
                             format(gradeUpCostsB[maxDim - 2].pow(degr_powCh)) + " 点数";
                         this.grup.visible = false;
                     } else {
@@ -7082,11 +7082,11 @@
                     this.degr.visible = false;
                 } else {
                     this.gAvaible.visible = true;
-                    this.gAvaible.text = "升级现在已经最大了";
+                    this.gAvaible.text = "升阶已达上限";
                     this.grup.visible = false;
                     if (points.lt(gradeUpCostsB[maxDim - 2].pow(degr_powCh))) {
                         this.dAvaible.visible = true;
-                        this.dAvaible.text = "降级可用将在 " +
+                        this.dAvaible.text = "阶级重置可用将在 " +
                             format(gradeUpCostsB[maxDim - 2].pow(degr_powCh)) + " 点数";
                         this.degr.visible = false;
                     } else {
@@ -7609,7 +7609,7 @@
         this.autoGup = new lib.autogup();
         this.autoGup.name = "autoGup";
         this.autoGup.setTransform(816.95, 650.65, 1.6686, 1.6686, 0, 0, 0, 8.7, 8.8);
-        this.autoasc = new cjs.Text("自动转生?", "bold 12px 'Arial'", "#E6F2FF");
+        this.autoasc = new cjs.Text("自动时间重置?", "bold 12px 'Arial'", "#E6F2FF");
         this.autoasc.name = "autoasc";
         this.autoasc.textAlign = "center";
         this.autoasc.lineHeight = 16;
@@ -7653,7 +7653,7 @@
         this.infShow.setTransform(1160.5, 690.1, 1.0091, 1.0091, 0, 0, 0, 54.4, 0.1);
         this.instance = new lib.infBar_empty();
         this.instance.setTransform(-0.85, 711.7, 0.9741, 0.9741, 0, 0, 0, -0.2, 8.8);
-        this.ascTip = new cjs.Text("转生\n重置速度\n但是提高倍数", "bold 10px 'Arial'", "#DEE6F6");
+        this.ascTip = new cjs.Text("时间重置\n重置时间速度\n但是提高倍数", "bold 10px 'Arial'", "#DEE6F6");
         this.ascTip.name = "ascTip";
         this.ascTip.textAlign = "center";
         this.ascTip.lineHeight = 13;
@@ -7701,7 +7701,7 @@
         new cjs.ButtonHelper(this.clickChg, 0, 1, 2);
         this.instance_1 = new lib.clickStg();
         this.instance_1.setTransform(175.35, 659.85, 1, 1, 0, 0, 0, 126.2, 17.8);
-        this.gAvaible = new cjs.Text("升级将于 100,000 点数 时可用", "bold 12px 'Arial'", "#ACE6AC");
+        this.gAvaible = new cjs.Text("升阶将于 100,000 点数 时可用", "bold 12px 'Arial'", "#ACE6AC");
         this.gAvaible.name = "gAvaible";
         this.gAvaible.textAlign = "center";
         this.gAvaible.lineHeight = 16;
@@ -7722,7 +7722,7 @@
         this.cGames.setTransform(1017.55, 3.8, 0.8981, 0.8889, 0, 0, 0, 0.1, 0.1);
         this.cGames.alpha = 0.75;
         new cjs.ButtonHelper(this.cGames, 0, 1, 2);
-        this.tsCost = new cjs.Text("升级成本: 1,000,000 点数.", "bold 10px 'Arial'", "#B4C2CC");
+        this.tsCost = new cjs.Text("升阶成本: 1,000,000 点数.", "bold 10px 'Arial'", "#B4C2CC");
         this.tsCost.name = "tsCost";
         this.tsCost.lineHeight = 13;
         this.tsCost.lineWidth = 146;
@@ -7770,7 +7770,7 @@
         this.ticSpeed.lineWidth = 196;
         this.ticSpeed.parent = this;
         this.ticSpeed.setTransform(839.85, 65.95, 2.3377, 2.3377);
-        this.totalMult = new cjs.Text("Total Mult: x1.00", "bold 10px 'Arial'", "#E6E6E6");
+        this.totalMult = new cjs.Text("总倍数: x1.00", "bold 10px 'Arial'", "#E6E6E6");
         this.totalMult.name = "totalMult";
         this.totalMult.lineHeight = 13;
         this.totalMult.lineWidth = 227;
