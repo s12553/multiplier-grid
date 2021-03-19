@@ -4179,7 +4179,7 @@
         this.gridCh.lineWidth = 110;
         this.gridCh.parent = this;
         this.gridCh.setTransform(92.0472, 29.35, 1.5943, 1.5943);
-        this.text = new cjs.Text("降级?", "bold 7px 'Arial'", "#FFFFFF");
+        this.text = new cjs.Text("降级(D)?", "bold 7px 'Arial'", "#FFFFFF");
         this.text.textAlign = "center";
         this.text.lineHeight = 10;
         this.text.lineWidth = 71;
