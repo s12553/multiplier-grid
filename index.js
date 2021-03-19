@@ -6732,11 +6732,11 @@
             function main() {
                 this.PointsNow.text = "点数: " + format(points.floor(), 0);
                 if (t_max.gte(10)) {
-                    this.ticSpeed.text = "时间刻度: " + format(t_max, 0) + " ms" + " [x" + format(t_mult, 0) + "]";
+                    this.ticSpeed.text = "时间刻度: " + format(t_max, 0) + " 毫秒" + " [x" + format(t_mult, 0) + "]";
                 } else if (t_max.gte(1)) {
-                    this.ticSpeed.text = "时间刻度: " + format(t_max, 1) + " ms" + " [x" + format(t_mult, 0) + "]";
+                    this.ticSpeed.text = "时间刻度: " + format(t_max, 1) + " 毫秒" + " [x" + format(t_mult, 0) + "]";
                 } else {
-                    this.ticSpeed.text = "时间刻度: 1 / " + format(nd(1).div(t_max), 1) + " ms" + " [x" + format(t_mult, 0) + "]";
+                    this.ticSpeed.text = "时间刻度: 1 / " + format(nd(1).div(t_max), 1) + " 毫秒" + " [x" + format(t_mult, 0) + "]";
                 }
                 this.fc1.pcNum.text = "1%";
                 this.fc2.pcNum.text = "10%";
@@ -7763,7 +7763,7 @@
         this.tickBar = new lib.tickBar();
         this.tickBar.name = "tickBar";
         this.tickBar.setTransform(840, 102.5, 1, 1, 0, 0, 0, 232.2, 3.8);
-        this.ticSpeed = new cjs.Text("时间刻度: 2,000 ms [x1]", "bold 10px 'Arial'", "#CCCCCC");
+        this.ticSpeed = new cjs.Text("时间刻度: 2,000 毫秒 [x1]", "bold 10px 'Arial'", "#CCCCCC");
         this.ticSpeed.name = "ticSpeed";
         this.ticSpeed.textAlign = "center";
         this.ticSpeed.lineHeight = 13;
