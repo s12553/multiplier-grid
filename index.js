@@ -6222,7 +6222,7 @@
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
                     var effNext = nd(1).plus((IUpgrades[0].amount).plus(1));
-                    this.iWindowt.iuHov.iu_desc.text = "获得奖励倍数: x" +
+                    this.iWindowt.iuHov.iu_desc.text = "时间奖励倍数: x" +
                         format(IUpgrades[0].effect, 0) + " -> x" + format(effNext, 0);
                 } else if (infHover == 2) {
                     this.iWindowt.iuHov.visible = true;
@@ -6241,7 +6241,7 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu3.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu3.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 3 - Autoflush";
+                    this.iWindowt.iuHov.iu_name.text = "IU 3 - 自动灌注";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[2].amount, 0) + " / " + format(IUpgrades[2].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[2].cost, 0) + " IP";
                     if (IUpgrades[2].amount.gte(IUpgrades[2].max_am)) {
@@ -6250,7 +6250,7 @@
                         this.iWindowt.iuHov.buyIP.visible = true;
                     }
                     var effNext = IUpgrades[2].amount.plus(1);
-                    this.iWindowt.iuHov.iu_desc.text = "自动冲洗额外的所有单元格 " +
+                    this.iWindowt.iuHov.iu_desc.text = "自动额外灌注所有单元格 " +
                         format(IUpgrades[2].effect, 0) + "% -> " + format(effNext, 0) + "%";
                 } else if (infHover == 4) {
                     this.iWindowt.iuHov.visible = true;
@@ -6745,11 +6745,11 @@
                 this.fc5.pcNum.text = "100%";
                 this.fc6.pcNum.text = "下个";
                 if (clicksFlush == 2) {
-                    this.cTflush_text.text = "双击冲洗";
+                    this.cTflush_text.text = "双击灌注";
                 } else if (clicksFlush == 1) {
-                    this.cTflush_text.text = "单击冲洗";
+                    this.cTflush_text.text = "单击灌注";
                 } else {
-                    this.cTflush_text.text = "悬浮冲洗";
+                    this.cTflush_text.text = "鼠标悬停灌注";
                 }
                 fps2 += 1;
                 if (t_level.lte(99)) {
@@ -7002,8 +7002,8 @@
                 this.cellh1.cellPos.text = "单元格: " + choseY + "x" + choseX;
                 this.cellh1.levText.text = "等级 " + format(cells[choseY][choseX].level, 0);
                 this.cellh1.mulText.text = "倍数 " + format_short(cells[choseY][choseX].mult, 2) + " -> " + format_short(cells[choseY][choseX].Nmult, 2);
-                this.cellh1.totText.text = "累计冲洗 [TF]: " + format(cells[choseY][choseX].totFlush, 2) + " 点数";
-                this.cellh1.mfText.text = "手动冲洗 [MF]: " + format(cells[choseY][choseX].flushed, 2) + " 点数";
+                this.cellh1.totText.text = "累计灌注 [TF]: " + format(cells[choseY][choseX].totFlush, 2) + " 点数";
+                this.cellh1.mfText.text = "手动灌注 [MF]: " + format(cells[choseY][choseX].flushed, 2) + " 点数";
                 this.cellh1.nlText.text = "下一级将于: " + format(cells[choseY][choseX].nextLat, 0) + " MF";
                 this.cellh1.lmText.text = "等级倍数 " + format(cells[choseY][choseX].lMult, 2);
                 this.cellh2.Formulat.text = "倍数 = 1 + [log4(1 + TF/CD)^PE]/10*LM";
@@ -7025,19 +7025,19 @@
                     this.cellh2.crossUp.visible = false;
                     this.cellh2.crossLeft.visible = false;
                 }
-                this.cellh2.preExp.text = "声望 Expn: ^" + format_short(cells[choseY][choseX].presExp);
+                this.cellh2.preExp.text = "声望倍数: ^" + format_short(cells[choseY][choseX].presExp);
                 if (cells[choseY][choseX].flushed.lt(cells[choseY][choseX].flushToP)) {
                     this.cellh2.preSend.visible = false;
                     this.cellh2.preExc.visible = false;
                     this.cellh2.preCell.visible = false;
-                    this.cellh2.preAvai.text = "声望可用于 " + format(cells[choseY][choseX].flushToP) + " MF";
+                    this.cellh2.preAvai.text = "下一次声望需要 " + format(cells[choseY][choseX].flushToP) + " MF";
                 } else {
                     this.cellh2.preSend.visible = true;
                     this.cellh2.preSend.text = "发送: " + format(cells[choseY][choseX].preSend) + "% -> " + format(cells[choseY][choseX].preSend_next) + "%";
                     this.cellh2.preExc.visible = true;
                     this.cellh2.preExc.text = "P.Exponent: " + format(cells[choseY][choseX].presExp, 2) + " -> " + format(cells[choseY][choseX].presExp_next, 2);
                     this.cellh2.preCell.visible = true;
-                    this.cellh2.preAvai.text = "声望是可用的，但它会重置这个单元格";
+                    this.cellh2.preAvai.text = "你可以进行声望重置，它会重置这个单元格";
                 }
                 this.tickBar.gotoAndStop(t_now.div(t_max).times(200).floor().toNumber());
                 if (t_now.gte(t_max)) {
@@ -7596,7 +7596,7 @@
         this.autodegr.lineWidth = 89;
         this.autodegr.parent = this;
         this.autodegr.setTransform(745.4, 676.65, 1.2864, 1.2864);
-        this.autogup = new cjs.Text("自动升级?", "bold 12px 'Arial'", "#FFFFE6");
+        this.autogup = new cjs.Text("自动升阶?", "bold 12px 'Arial'", "#FFFFE6");
         this.autogup.name = "autogup";
         this.autogup.textAlign = "center";
         this.autogup.lineHeight = 16;
@@ -7688,7 +7688,7 @@
         this.degr = new lib.degr();
         this.degr.name = "degr";
         this.degr.setTransform(1058.5, 366.15, 1, 1, 0, 0, 0, 92, 44);
-        this.cTflush_text = new cjs.Text("点击2次以冲洗", "bold 8px 'Arial'", "#FFFFFF");
+        this.cTflush_text = new cjs.Text("点击2次进行灌注", "bold 8px 'Arial'", "#FFFFFF");
         this.cTflush_text.name = "cTflush_text";
         this.cTflush_text.textAlign = "center";
         this.cTflush_text.lineHeight = 11;
@@ -7732,7 +7732,7 @@
         this.tickUpgrade.name = "tickUpgrade";
         this.tickUpgrade.setTransform(713.05, 131.1, 1, 1, 0, 0, 0, 57.3, 13.8);
         new cjs.ButtonHelper(this.tickUpgrade, 0, 1, 2);
-        this.miniTip = new cjs.Text("提示:总倍数是所有单元格的倍数", "bold 8px 'Arial'", "#CCCCCC");
+        this.miniTip = new cjs.Text("提示:总倍数是所有单元格倍数的乘积", "bold 8px 'Arial'", "#CCCCCC");
         this.miniTip.name = "miniTip";
         this.miniTip.textAlign = "center";
         this.miniTip.lineHeight = 11;
@@ -7754,7 +7754,7 @@
         this.fc1 = new lib.flushChoose();
         this.fc1.name = "fc1";
         this.fc1.setTransform(1024.55, 177.65, 1.8338, 1.8338, 0, 0, 0, 8.2, 5);
-        this.text = new cjs.Text("冲洗百分比:", "bold 10px 'Arial'", "#CCCCCC");
+        this.text = new cjs.Text("灌注百分比:", "bold 10px 'Arial'", "#CCCCCC");
         this.text.textAlign = "center";
         this.text.lineHeight = 13;
         this.text.lineWidth = 100;
