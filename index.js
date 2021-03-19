@@ -7004,7 +7004,7 @@
                 this.cellh1.mulText.text = "倍数 " + format_short(cells[choseY][choseX].mult, 2) + " -> " + format_short(cells[choseY][choseX].Nmult, 2);
                 this.cellh1.totText.text = "累计灌注 [TF]: " + format(cells[choseY][choseX].totFlush, 2) + " 点数";
                 this.cellh1.mfText.text = "手动灌注 [MF]: " + format(cells[choseY][choseX].flushed, 2) + " 点数";
-                this.cellh1.nlText.text = "下一级将于: " + format(cells[choseY][choseX].nextLat, 0) + " MF";
+                this.cellh1.nlText.text = "下一级需要: " + format(cells[choseY][choseX].nextLat, 0) + " MF";
                 this.cellh1.lmText.text = "等级倍数 [LM] " + format(cells[choseY][choseX].lMult, 2);
                 this.cellh2.Formulat.text = "倍数 = 1 + [log4(1 + TF/CD)^PE]/10*LM";
                 this.cellh2.cdText.text = "网格削弱 [CD]: " + format(cells[choseY][choseX].fDecr, 0);
