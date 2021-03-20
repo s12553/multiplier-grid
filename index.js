@@ -6280,7 +6280,7 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu6.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu6.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 6 - 别担心";
+                    this.iWindowt.iuHov.iu_name.text = "IU 6 - 省事了";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[5].amount, 0) + " / " + format(IUpgrades[5].max_am, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[5].cost, 0) + " IP";
                     if (IUpgrades[5].amount.gte(IUpgrades[5].max_am)) {
@@ -6358,12 +6358,12 @@
                     this.iWindowt.iuHov.visible = true;
                     this.iWindowt.iuHov.x = this.iWindowt.iu12.x;
                     this.iWindowt.iuHov.y = this.iWindowt.iu12.y + 100;
-                    this.iWindowt.iuHov.iu_name.text = "IU 12 - Duration Division";
+                    this.iWindowt.iuHov.iu_name.text = "IU 12 - 时间刻度间隔";
                     this.iWindowt.iuHov.iu_lev.text = "等级: " + format(IUpgrades[11].amount, 0);
                     this.iWindowt.iuHov.buyIP.iu_cost.text = format(IUpgrades[11].cost, 0) + " IP";
                     this.iWindowt.iuHov.buyIP.visible = true;
                     var effNext = IUpgrades[11].amount.plus(2).pow(0.175);
-                    this.iWindowt.iuHov.iu_desc.text = "Tick Dur. Divider: / " +
+                    this.iWindowt.iuHov.iu_desc.text = "时间刻度间隔: / " +
                         format(IUpgrades[11].effect, 2) + " -> / " + format(effNext, 2);
                 } else if (infHover == 13) {
                     this.iWindowt.iuHov.visible = true;
